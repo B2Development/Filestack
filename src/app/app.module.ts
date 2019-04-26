@@ -5,20 +5,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule} from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TryItComponent } from './try-it/try-it.component';
 
 const appRoutes: Routes = [
   { path: 'try_it'}
 ];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TryItComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
