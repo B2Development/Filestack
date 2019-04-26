@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './try_it/try_it.html',
+  templateUrl: './tryIt/tryIt.html',
   styleUrls: ['./app.component.css']
 })
 export class TryITComponent {
@@ -28,7 +28,7 @@ const onProgress = (evt) => {
 
 client.upload(__dirname + '/path/to/file', { onProgress }, {}, token)
   .then(res => {
-    console.log('success: ', res)
+    console.log('success: ', res);
   })
   .catch(err => {
     console.log(err);
